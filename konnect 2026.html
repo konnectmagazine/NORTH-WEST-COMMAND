@@ -1,4 +1,4 @@
-²<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -246,12 +246,186 @@
       gap: 1rem;
     }
 
+    .list-badge {
+      width: 72px;
+      height: 42px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 0.8rem;
+      color: #ffffff;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+      background-color: #22252a;
+      flex-shrink: 0;
+    }
+
+    .list-month-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .read-btn, .btn-action {
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      padding: 0.45rem 1.2rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .read-btn:hover, .btn-action:hover {
+      color: #dddddd;
+      opacity: 0.9;
+    }
+
+    .bottom-workspace-wrapper {
+      margin-top: auto;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .reader-workspace {
+      display: none;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem 3rem;
+    }
+
     .reader-card {
       background: var(--reader-bg);
       border: 1px solid var(--border);
       border-radius: 16px;
       box-shadow: var(--shadow);
-              flex-direction: row;
+      overflow: hidden;
+    }
+
+    .reader-header {
+      padding: 1.2rem 1.8rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-glass);
+      gap: 1rem;
+    }
+
+    .reader-body {
+      padding: 2rem;
+      min-height: 250px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 2rem;
+    }
+
+    .reader-cover-preview {
+      height: 260px;
+      border-radius: 12px;
+      padding: 1.5rem;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-size: cover;
+      background-position: center;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .file-viewer-mock {
+      border: 2px dashed var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      background: var(--bg-glass);
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Mobile & Tablet Responsive Adjustments */
+    @media (max-width: 768px) {
+      header {
+        padding: 0.8rem 1rem;
+      }
+
+      .brand-title {
+        font-size: 1.1rem;
+      }
+
+      .hero {
+        padding: 1.8rem 1rem 0.8rem;
+      }
+
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+
+      .hero p {
+        font-size: 0.85rem;
+      }
+
+      .filter-wrapper {
+        padding: 0 0.8rem;
+        margin: 1rem auto;
+      }
+
+      details.year-accordion summary {
+        padding: 0.8rem 1rem;
+        font-size: 1.05rem;
+      }
+
+      .scroll-container {
+        padding: 0.6rem;
+      }
+
+      .card-item {
+        padding: 0.6rem 0.8rem;
+      }
+
+      .list-badge {
+        width: 60px;
+        height: 36px;
+        font-size: 0.75rem;
+      }
+
+      .list-month-title {
+        font-size: 0.9rem;
+      }
+
+      .read-btn, .btn-action {
+        padding: 0.4rem 0.9rem;
+        font-size: 0.75rem;
+      }
+
+      .reader-workspace {
+        padding: 0 0.8rem 2rem;
+        margin: 1rem auto;
+      }
+
+      .reader-header {
+        padding: 1rem;
+        flex-direction: row;
         align-items: center;
       }
 
@@ -281,7 +455,7 @@
   </style>
 </head>
 <body>
-<p> This a change inmade on github</p>
+
   <input type="checkbox" id="theme-toggle" class="state-control">
 
   <div class="page-wrapper">
