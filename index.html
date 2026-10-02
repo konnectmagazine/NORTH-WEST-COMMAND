@@ -135,27 +135,6 @@
     html:has(#theme-toggle:checked) .theme-dark-label { display: none; }
     html:has(#theme-toggle:checked) .theme-light-label { display: inline; }
 
-    /* Fully responsive container & styling for top cover image */
-    .hero-image-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      max-width: 1150px;
-      margin: 1.5rem auto 0;
-      padding: 0 1rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-image-wrapper img {
-      width: 100%;
-      height: auto;
-      max-height: 325px;
-      object-fit: contain;
-      border-radius: 8px;
-    }
-
     .hero {
       text-align: center;
       padding: 2.5rem 1rem 1rem;
@@ -168,17 +147,16 @@
 
     .hero h1 {
       font-family: 'Syne', sans-serif;
-      font-size: 1.7rem;
+      font-size: 2.2rem;
       margin-bottom: 1.4rem;
-      color: #5f88dd;
-     
+      color: #1754dd; 
+	  text-shadow:1px 1px red;
     }
 
     .hero p {
-      color: #1234hh;
-      font-size:1.5rem;
-      text-align:left;
-      text-shadow:1px 2px red;
+      color: #777653;
+      font-size: 0.95rem;
+	 
     }
 
     .highlight-btn {
@@ -492,13 +470,14 @@
         <span class="theme-light-label">☀️ Daylight Mode</span>
       </label>
     </header>
-
-    <div class="hero-image-wrapper">
-      <img src="https://lh3.googleusercontent.com/d/1iWganp5qKf6fNdCWLh5KJFJBNq-iIa8U" alt="konnect magazine">
-    </div>
-
+<div style="display:flex; justify-content:left;margin-left:213px; padding: 2.5rem 1rem 1rem;
+      max-width: auto;
+      margin: 0 auto;
+      position:relative;">
+  <img src="https://lh3.googleusercontent.com/d/1iWganp5qKf6fNdCWLh5KJFJBNq-iIa8U" alt="konnect magazine" width="350px" height="150px">
+</div>
     <section class="hero">
-      <h1>KONNECT — Connecting North Kashmir, One Story at a Time</h1>
+      <h1>KONNECT — Connecting North Kashmir, One Story at a Time<br>کونیکٹ — شمالی کشمیر کو جوڑنا، ایک وقت میں ایک کہانی</h1>
       <p>Click On <span class="highlight-btn">Read</span> Button To See Our Full Magazine</p>
     </section>
 
@@ -549,7 +528,7 @@
     // Base URL path for Google Drive image thumbnails
     const BASE_IMAGE_URL = 'https://lh3.googleusercontent.com/d/';
 
-    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const months = ['January (محرم)', 'February(صفر)', 'March(ربیع الاول)', 'April(ربیع الثانی)', 'May(جمادی الاول)', 'June(جمادی الثانی)', 'July(رجب)', 'August(شعبان)', 'September(رمضان)', 'October(شوال)', 'November(ذی القعدہ)', 'December(ذی الحجہ)'];
     const shortMonths = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
     const years = [2026];
 
@@ -716,3 +695,5 @@
 
 </body>
 </html>
+
+
